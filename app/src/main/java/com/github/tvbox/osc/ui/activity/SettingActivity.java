@@ -107,7 +107,7 @@ public class SettingActivity extends BaseActivity {
     }
 
     private void initData() {
-        currentApi = Hawk.get(HawkConfig.API_URL, "http://tvbox.v977.com/m.json");
+        currentApi = Hawk.get(HawkConfig.API_URL, "");
         currentLive = Hawk.get(HawkConfig.LIVE_URL, "");
         homeSourceKey = ApiConfig.get().getHomeSourceBean().getKey();
         homeRec = Hawk.get(HawkConfig.HOME_REC, 0);
